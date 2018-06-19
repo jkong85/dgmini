@@ -6,6 +6,7 @@
     <artifactId>app</artifactId>
     <version>1.0</version>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <docker.daemon.hostname/> <!-- inject into maven build via -Ddocker.daemon.hostname=the.hostname -->
         <docker.daemon.port>2375</docker.daemon.port>
         <docker.daemon.protocol>http</docker.daemon.protocol>
@@ -105,7 +106,7 @@
                                 </assembly>
                                 <runCmds>
                                 <!-- <runCmd>ln -s /opt/ditto/${project.build.finalName}-allinone.jar /opt/ditto/starter.jar</runCmd> -->
-                                    <runCmd>ln -s /opt/ditto/app.jar /opt/ditto/starter.jar</runCmd>
+                                    <runCmd>ln -s /opt/ditto/app-1.0.jar /opt/ditto/starter.jar</runCmd>
                                 </runCmds>
                             </build>
                         </image>

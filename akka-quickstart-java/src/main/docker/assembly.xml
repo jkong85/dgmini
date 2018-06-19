@@ -16,7 +16,7 @@
             <directory>target</directory>
             <outputDirectory>/opt/ditto</outputDirectory>
             <includes>
-                <include>*app.jar</include>
+                <include>*app-1.0.jar</include>
             </includes>
             <fileMode>0644</fileMode>
             <directoryMode>0755</directoryMode>

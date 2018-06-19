@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.lightbend.akka.sample.AkkaQuickstartTest" time="0.061" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.lightbend.akka.sample.AkkaQuickstartTest" time="0.052" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.151-b12"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/jkong/Code/test/hello-akka/akka-quickstart-java"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/jkong/Code/test/git-tmp/akka-quickstart-java"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,12 +16,12 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/jkong/Code/test/hello-akka/akka-quickstart-java"/>
+    <property name="user.dir" value="/Users/jkong/Code/test/git-tmp/akka-quickstart-java"/>
     <property name="java.runtime.version" value="1.8.0_151-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/"/>
+    <property name="java.io.tmpdir" value="/var/folders/v0/51338mss0d7bbx67z7dcq5y80000gn/T/"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -36,12 +36,12 @@
     <property name="os.version" value="10.13.3"/>
     <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.3/libexec/lib/jansi-native"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/var/root"/>
+    <property name="user.home" value="/Users/jkong"/>
     <property name="user.timezone" value="America/Chicago"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="root"/>
+    <property name="user.name" value="jkong"/>
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.3/libexec/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
@@ -65,5 +65,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.lightbend.akka.sample.AkkaQuickstartTest" name="testGreeterActorSendingOfGreeting" time="0.061"/>
+  <testcase classname="com.lightbend.akka.sample.AkkaQuickstartTest" name="testGreeterActorSendingOfGreeting" time="0.052"/>
 </testsuite>
