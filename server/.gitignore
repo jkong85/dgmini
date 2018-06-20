@@ -1,0 +1,16 @@
+.checkstyle
+.classpath
+.flattened-pom.xml
+.idea
+*.iml
+.project
+.settings
+.metadata
+.vscode/
+target/
+/ditto_all_dependencies/
+dependencies.txt
+/docker/.env
+/docker/sandbox/.env
+/docker/sandbox/postgres
+/docker/sandbox/graphite/storage

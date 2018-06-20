@@ -1,0 +1,39 @@
+version: '3.0'
+
+services:
+  mongodb:
+    image: docker.io/mongo:3.4
+    networks:
+      default:
+        aliases:
+          - mongodb
+    command: mongod --storageEngine wiredTiger --noscripting
+    user: mongodb
+    environment:
+
+  app:
+    image: greeter:latest
+    networks:
+      default:
+        aliases:
+          - hello
+    entrypoint: sh -c "sleep 10; java -jar /opt/ditto/starter.jar"
+    environment:
+      - _JAVA_OPTIONS=-Xms256m -Xmx256m -Xss512k -XX:MaxMetaspaceSize=128m -XX:+ExitOnOutOfMemoryError
+      - IBM_JAVA_OPTIONS=-Xms256m -Xmx256m -Xss512k -XX:MaxMetaspaceSize=128m -XX:+ExitOnOutOfMemoryError
+
+#  things:
+#    image: docker.io/eclipse/ditto-things:${DITTO_VERSION:-latest}
+#    networks:
+#      default:
+#        aliases:
+#          - ditto-cluster
+#    depends_on:
+#      - policies
+#    entrypoint: sh -c "sleep 10; java -jar /opt/ditto/starter.jar"
+#    environment:
+#      - TZ=Europe/Berlin
+#      - INSTANCE_INDEX=1
+#      - BIND_HOSTNAME=0.0.0.0
+#      - _JAVA_OPTIONS=-Xms256m -Xmx256m -Xss512k -XX:MaxMetaspaceSize=128m -XX:+ExitOnOutOfMemoryError
+#      - IBM_JAVA_OPTIONS=-Xms256m -Xmx256m -Xss512k -XX:MaxMetaspaceSize=128m -XX:+ExitOnOutOfMemoryError
